@@ -1,0 +1,30 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2599
+
+I use my to-do list as a dumping ground for text and notes, so as long-term ideas pile up my lists will inevitably blow up into hundreds or thousands of lines. This is the natural order of things, and vim with proper highlighting and formatting makes it manageable. I also prefer my text lit up like a Christmas tree.
+
+Highlighted:
+ -  lines ending with a colon (":")
+ -  lines prefixed by an asterisk ("*")
+ -  from a left curly brace ("{") to the end of the line
+ -  numbers
+ -  standard panic words: TODO, XXX, and others
+ -  a few common words that merit emphasis (yes, no, not, ...)
+ -  a personalized list of words, e.g. names of friends and co-workers (customizing this will be made easier in a later release)
+
+Following the GTD approach is possible:
+
+    project -- end the line with a colon, and indent the tasks
+
+    tasks -- plain text, or starting with a dash, it doesn't matter.
+            (copy and paste is expected to work without reformatting.)
+
+    note -- prefix the line with an asterisk to highlight it in the
+            same style as source code comments. (for 1-liners.)
+
+    contexts -- I keep project definitions small and group them under
+            categories that can be used as keywords. Specifically, I
+            start a new category with a line of underscores and a curly
+            brace before the category name(s) and tags. The }} and {{
+            vim keybindings then work as expected, and * and # work for
+            finding matching category tags within other text.
+
